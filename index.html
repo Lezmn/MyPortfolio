@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio | Developer</title>
+  <title>Thanabordee Pradubkham | Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Thanabordee Pradubkham, a 4th-year IT student at Kasetsart University seeking a Full Stack Developer internship. React, TypeScript, NestJS, PostgreSQL.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lezmn.github.io/MyPortfolio/">
+  <meta property="og:title" content="Thanabordee Pradubkham | Full Stack Developer">
+  <meta property="og:description" content="4th-year IT student at Kasetsart University seeking a Full Stack Developer internship. React, TypeScript, NestJS, PostgreSQL.">
+  <meta property="og:image" content="https://lezmn.github.io/MyPortfolio/images/profile.png">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563eb'/><text x='50' y='68' font-size='52' font-family='monospace' font-weight='700' fill='white' text-anchor='middle'>TP</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
@@ -14,7 +21,8 @@
   <!-- NAV -->
   <nav>
     <div class="nav-logo">My Portfolio</div>
-    <ul class="nav-links">
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+    <ul class="nav-links" id="navLinks">
       <li><a href="#about">about</a></li>
       <li><a href="#skills">skills</a></li>
       <li><a href="#projects">projects</a></li>
@@ -27,15 +35,15 @@
     <section id="profile">
       <div class="profile-inner">
         <div class="avatar-wrap" id="avatarWrap">
-          <img src="images/profile.png" class="avatar-placeholder" id="avatarPlaceholder">
+          <img src="images/profile.png" class="avatar-placeholder" id="avatarPlaceholder" alt="Thanabordee Pradubkham">
         </div>
 
         <!-- Text -->
         <div class="profile-text">
           <h1 class="profile-name">Thanabordee Pradubkham</h1>
-          <p class="profile-sub"><span class="chip">Backend Developer / Full Stack Developer</span> · Fourth Year Student </p>
+          <p class="profile-sub"><span class="chip">Full Stack Developer Intern</span> · 4th-Year IT Student</p>
           <p class="profile-desc">
-            4th-year student studying in Kasetsart University Major in Information Technology, Interested in backend development.
+            I build full-stack web apps with React, TypeScript, NestJS and PostgreSQL, from REST APIs and database design to real-time features.
           </p>
 
           <div class="profile-cta">
@@ -57,17 +65,17 @@
       <h2 class="sec-title reveal">About Me</h2>
       <div class="about-grid reveal">
         <div class="about-text">
-          <p>Hello, I'm Thanabordee, a 4rd-year student in the Bachelor of Science Program in Information Technology at Kasetsart University. Interested in Backend Development.</p>
-          <p>I have experience in developing REST APIs with Node.js and Spring Boot, and I have experience designing database with MySQL.</p>
-          <p>I am currently looking for opportunities and learning for new things as a Backend Developer or Full Stack Developer.</p>
+          <p>Hello, I'm Thanabordee, a 4th-year student in the Bachelor of Science Program in Information Technology at Kasetsart University, Kamphaeng Saen Campus.</p>
+          <p>I build end-to-end web applications: RESTful APIs with NestJS, Express and Spring Boot, relational databases with PostgreSQL, MySQL and Prisma, and frontends with React, TypeScript and Tailwind CSS.</p>
+          <p>I am looking for a Full Stack Developer internship where I can learn how production systems are built and operated, including system design, testing, CI/CD and cloud deployment, while contributing to a real engineering team.</p>
         </div>
         <div class="info-card">
           <div class="info-card-head">General Information</div>
           <div class="info-row"><span class="info-key">name</span><span class="info-val">Thanabordee Pradubkham</span></div>
-          <div class="info-row"><span class="info-key">year</span><span class="info-val">Year 4 </span></div>
-          <div class="info-row"><span class="info-key">focus</span><span class="info-val">Backend / API Design</span></div>
+          <div class="info-row"><span class="info-key">year</span><span class="info-val">Year 4</span></div>
+          <div class="info-row"><span class="info-key">focus</span><span class="info-val">Full Stack / Backend</span></div>
           <div class="info-row"><span class="info-key">lang</span><span class="info-val">Thai / English (B2)</span></div>
-          <div class="info-row"><span class="info-key">location</span><span class="info-val">Kampaeng San</span></div>
+          <div class="info-row"><span class="info-key">location</span><span class="info-val">Kamphaeng Saen</span></div>
         </div>
       </div>
     </section>
@@ -223,18 +231,13 @@
       <h2 class="sec-title reveal">Education</h2>
       <div class="timeline reveal">
         <div class="timeline-item">
-          <div class="timeline-date">2564 – 2568 (Current)</div>
-          <div class="timeline-title">Information Technology</div>
-          <div class="timeline-sub">Kasetsart University · GPA 3.33</div>
+          <div class="timeline-date">2023 – 2027 (Current)</div>
+          <div class="timeline-title">B.Sc. Information Technology</div>
+          <div class="timeline-sub">Kasetsart University, Kamphaeng Saen Campus · GPA 3.54</div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-date">2561 – 2564</div>
-          <div class="timeline-title">SeniorHigh School · Mathematics-English</div>
-          <div class="timeline-sub">Triamudomsuksa Pattanakarn Nonthaburi</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">2558 – 2561</div>
-          <div class="timeline-title">Junior High School</div>
+          <div class="timeline-date">2017 – 2023</div>
+          <div class="timeline-title">High School · Mathematics–English</div>
           <div class="timeline-sub">Triamudomsuksa Pattanakarn Nonthaburi</div>
         </div>
       </div>
@@ -248,28 +251,28 @@
     <section id="contact">
       <h2 class="sec-title reveal">Contact</h2>
       <div class="contact-grid reveal">
-        <div class="contact-link">
+        <a href="mailto:thanabordee.pr@ku.th" class="contact-link">
           <img src="images/gmail.png" class="img" alt="Email">
           <div class="contact-meta"><div class="contact-type">EMAIL</div><div class="contact-val">thanabordee.pr@ku.th</div></div>
-        </div>
-        <a href="https://github.com/Lezmn" target="_blank" class="contact-link">
+        </a>
+        <a href="https://github.com/Lezmn" target="_blank" rel="noopener" class="contact-link">
           <img src="images/github.png" class="img" alt="GitHub">
           <div class="contact-meta"><div class="contact-type">GITHUB</div><div class="contact-val">github.com/Lezmn</div></div>
         </a>
-        <a href="https://www.facebook.com/thanabordee.pradubkam"class="contact-link">
+        <a href="https://www.facebook.com/thanabordee.pradubkam" target="_blank" rel="noopener" class="contact-link">
           <img src="images/facebook.png" class="img" alt="Facebook">
-          <div class="contact-meta"><div class="contact-type">FACEBOOK</div><div class="contact-val">fb.com/Thanabordee Pradubkam</div></div>
+          <div class="contact-meta"><div class="contact-type">FACEBOOK</div><div class="contact-val">fb.com/thanabordee.pradubkam</div></div>
         </a>
-        <div class="contact-link">
+        <a href="tel:+66963435413" class="contact-link">
           <img src="images/cell-phone.png" class="img" alt="Phone">
           <div class="contact-meta"><div class="contact-type">PHONE</div><div class="contact-val">096-343-5413</div></div>
-        </div>
+        </a>
       </div>
     </section>
   </div>
 
   <footer>
-    © 2568 · Portfolio  · Thanabordee Pradubkham
+    © 2026 · Thanabordee Pradubkham
   </footer>
   <script src="index.js"></script>
 </body>

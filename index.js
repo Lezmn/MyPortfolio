@@ -21,6 +21,20 @@
 
     sections.forEach(s => navObs.observe(s));
 
+    // Mobile menu
+    const nav = document.querySelector('nav');
+    const navToggle = document.getElementById('navToggle');
+
+    const setMenu = open => {
+      nav.classList.toggle('open', open);
+      navToggle.setAttribute('aria-expanded', open);
+      navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      navToggle.textContent = open ? '✕' : '☰';
+    };
+
+    navToggle.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+    navLinks.forEach(a => a.addEventListener('click', () => setMenu(false)));
+
     // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', e => {

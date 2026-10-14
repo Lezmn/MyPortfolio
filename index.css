@@ -51,6 +51,17 @@
 
     .nav-links { display: flex; gap: 0.25rem; list-style: none; }
 
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.4rem;
+      line-height: 1;
+      padding: 0.4rem 0.5rem;
+      cursor: pointer;
+    }
+
     .nav-links a {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.72rem;
@@ -508,7 +519,18 @@
       .profile-inner { flex-direction: column; gap: 1.5rem; align-items: flex-start; }
       .about-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: minmax(0, 1fr); }
-      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 58px; left: 0; right: 0;
+        flex-direction: column;
+        background: #2f3640;
+        padding: 0.5rem 1.25rem 1rem;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      }
+      nav.open .nav-links { display: flex; }
+      .nav-links a { display: block; font-size: 0.85rem; padding: 0.65rem 0.8rem; }
       nav { padding: 0 1.25rem; }
       .container { padding: 0 1.25rem; }
     }
