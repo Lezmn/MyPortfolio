@@ -253,6 +253,8 @@
       gap: 0.875rem;
     }
 
+    .skills-grid-cat { grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); }
+
     .skill-card {
       background: var(--surface);
       border: 1.5px solid var(--border);
@@ -354,6 +356,18 @@
       border-radius: 4px;
       font-weight: 600;
     }
+
+    .project-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-top: 0.85rem; }
+
+    .project-links a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .project-links a:hover { text-decoration: underline; }
 
     .project-badge {
       font-family: 'JetBrains Mono', monospace;
